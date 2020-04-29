@@ -43,7 +43,15 @@ Program to simulate a moving object on a table
 - If the program gets `4,4,2,2`  as input, the table is initiated to size 4 x 4 with the object in position [2, 2] with direction north. 
 - Then, commands `1,4,1,3,2,3,2,4,1,0` are read from stdin and executed. The final output would then be the end position of the object, in this case`[0, 1]`.
 
+
 # Developer Notes / Documentation
+
+### Build and Run Program
+1. `git clone https://github.com/jluna-dev/simulate-moving-object.git`
+2. In command line, cd to the cloned project path
+3. Run `mvn clean install`
+4. After build success, cd to target folder 
+5. Run `java -jar simulate-moving-object-1.0-SNAPSHOT.jar`
 
 ### Validations
 Added input validation exception handling for the following:
@@ -51,7 +59,6 @@ Added input validation exception handling for the following:
 - Commands input range should be between 0 to 4 only.
 - Input should be a valid table size.
 - Initial object position should not exceed table size.
-
 
 ### Developer Notes
 - Program done in Java.
@@ -62,7 +69,7 @@ Added input validation exception handling for the following:
 
 ### Expanded functionality in the future
 - Handle different shapes than a rectangle
-  * MatrixObject model has "direction" variable to handle this functionality in the future. Logic can be added to current code to handle such function.
+  * Table model has "shape" variable to handle this functionality in the future. Logic can be added to current code to handle such function.
 - Add more commands like rotating the table instead of the object
   * Table model has "direction" variable to handle this functionality in the future. Logic can be added to current code to handle such function.
 - Change the binary form of the protocol to JSON
