@@ -36,7 +36,7 @@ Program to simulate a moving object on a table
   1 = move forward one step
   2 = move backwards one step
   3 = rotate clockwise 90 degrees (eg north to east)
-  4 = rotate counterclockwise 90 degrees (eg west to south)>` 
+  4 = rotate counterclockwise 90 degrees (eg west to south) 
 ```
 
 ### Example
@@ -46,11 +46,11 @@ Program to simulate a moving object on a table
 # Developer Notes / Documentation
 
 ### Validations
-Added validation exception handling for the following validations:
+Added input validation exception handling for the following:
 - Input size should be 4.
 - Commands input range should be between 0 to 4 only.
-- Valid table size.
-- Object position initial or result should not exceed table size.
+- Input should be a valid table size.
+- Initial object position should not exceed table size.
 
 
 ### Developer Notes
