@@ -1,3 +1,7 @@
+## simulate-moving-object
+Program to simulate a moving object on a table
+
+
 ### About
 - The purpose of this test is to cover general practices, design and structure as well as algorithmic solutions for a smaller project.
 - You can make assumptions if nothing is specifically stated, but be sure to document these.
